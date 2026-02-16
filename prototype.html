@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calendar</title>
+    <style>
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let max_days = 31;
+        let current_day = 1;
+
+        document.write('<table>');
+        document.write('<tr>');
+        
+        while(current_day <= max_days){
+            document.write('<td>'+current_day+'</td>');
+            current_day = current_day + 1;
+            // ++current_day
+        }
+        document.write('</tr>');
+        document.write('</table>');
+        
+
+        
+    </script>
+
+</body>
+</html>
