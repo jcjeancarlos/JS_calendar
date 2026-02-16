@@ -14,21 +14,31 @@
 <body>
 
     <script>
-        let max_days = 31;
-        let current_day = 1;
+
+        let col = 1;
+        let line = 1;
+        let day = 1;
 
         document.write('<table>');
-        document.write('<tr>');
-        
-        while(current_day <= max_days){
-            document.write('<td>'+current_day+'</td>');
-            current_day = current_day + 1;
-            // ++current_day
+
+        while (line <= 5){
+            document.write('<tr>');
+            col = 1;
+            while (col <=7) {
+            
+                document.write('<td>'+day+'</td>');   
+                col = col + 1;
+                day = day+1;
+            }
+            
+            document.write('</tr>');
+            line = line + 1;
+            
         }
-        document.write('</tr>');
+        
         document.write('</table>');
         
-
+            
         
     </script>
 
