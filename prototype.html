@@ -15,27 +15,22 @@
 
     <script>
 
-        let col = 1;
-        let line = 1;
         let day = 1;
 
         document.write('<table>');
-
-        while (line <= 5){
+        for (let line = 1; line <= 5; line++){
             document.write('<tr>');
-            col = 1;
-            while (col <=7) {
             
-                document.write('<td>'+day+'</td>');   
-                col = col + 1;
-                day = day+1;
+            for (let col = 1; col <= 7; col++){
+                if (day<=31) {
+                    
+                document.write('<td>'+day+'</td>');
+                ++day 
+                }  
             }
-            
+
             document.write('</tr>');
-            line = line + 1;
-            
         }
-        
         document.write('</table>');
         
             
