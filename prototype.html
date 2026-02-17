@@ -10,32 +10,13 @@
             text-align: center;
         }
     </style>
+    
+    <script src="script.js"></script>
+
 </head>
 <body>
-
     <script>
-
-        let day = 1;
-
-        document.write('<table>');
-        for (let line = 1; line <= 5; line++){
-            document.write('<tr>');
-            
-            for (let col = 1; col <= 7; col++){
-                if (day<=31) {
-                    
-                document.write('<td>'+day+'</td>');
-                ++day 
-                }  
-            }
-
-            document.write('</tr>');
-        }
-        document.write('</table>');
-        
-            
-        
+        calendar(max_day);
     </script>
-
 </body>
 </html>
